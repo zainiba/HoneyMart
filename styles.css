@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.container .btn {
+  position: absolute;
+  top: 71%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #F9C901;
+  color: black;
+  font-size: 20px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+  color: black;
+}
+p {
+  color: red;
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
