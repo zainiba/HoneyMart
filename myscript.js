@@ -15,3 +15,10 @@ function myFunction() {
 var popup = document.getElementById("myPopup");
 popup.classList.toggle("show");
 }
+
+<!-- popper js-->
+
+// popovers Initialization
+$(function () {
+$('[data-toggle="popover"]').popover()
+})
