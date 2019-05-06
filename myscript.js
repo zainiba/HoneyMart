@@ -18,7 +18,53 @@ popup.classList.toggle("show");
 
 <!-- popper js-->
 
+// // popovers Initialization
+// $(function () {
+// $('[data-toggle="popover"]').popover()
+// })
+//
+//
+//
+// // popovers initialization - on click
+// $('[data-toggle="popover-click"]').popover({
+//   html: true,
+//   trigger: 'click',
+//   placement: 'bottom',
+//   content: function () { return '<img src="' + $(this).data('img') + '" />'; }
+// });
+//
+
+
 // popovers Initialization
 $(function () {
-$('[data-toggle="popover"]').popover()
+$('[data-toggle="popover-click"]').popover({
+  html: true,
+  trigger: 'trigger',
+  placement: 'top',
+  content: function () { return '<img src="' + $(this).data('img') + '" />'; }
 })
+})
+
+// SHopping cart
+var itemCount = 0;
+
+$('.add').click(function (){
+  itemCount ++;
+  $('#itemCount').html(itemCount).css('display', 'block');
+});
+
+$('.clear').click(function() {
+  itemCount = 0;
+  $('#itemCount').html('').css('display', 'none');
+  $('#cartItems').html('');
+});
+
+// shopping test 2
+
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}

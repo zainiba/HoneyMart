@@ -29,10 +29,13 @@
         <li class="active"><a href="shop.html">Shop</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+        <li><a href="#">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cart </a> <input type="text" id="number" value="0"/>
+        </li>
         <li><a href="checkout.html"> Check Out</a></li>
+      </div>
       </ul>
-    </div>
+
   </nav>
 
   <div class="container">
@@ -67,23 +70,19 @@
           <div class="column">
             <div class="card">
               <img src="images/contour.jpg" alt="Contour Kit" style="width:100%">
-              <h2>Anastasia Beverly Hills - Contour Kit </h2>
+              <h2>Contour Kit </h2>
               <p class="price">$40</p>
-              <p>Light to medium contour powder</p>
-
+              <p>Anastasia Beverly Hills - Light to medium contour powder</p>
               <div id="overlay" onclick="off()">
               <div id="text">Find plastic surgeons near you today!
                 <img src="images/plastic.jpg" alt="Plastic Surgeon" style="height:400px;">
               </div>
             </div>
-
             <div style="padding:20px">
               <button onclick="on()" type="button" class="btn btn-primary">Add to Cart</button>
             </div>
-
-
           </div>
-        </div>
+          </div>
 
           <div class="column">
             <div class="card">
@@ -93,27 +92,21 @@
               <p>Matte Liquid Lipstick - Jealousy</p>
 
               <div style="padding:20px">
-              <button div class="popup btn btn-primary" onclick="myFunction()">Add to Cart
-                <span class="popuptext" id="myPopup">Maybelline's New Lipstick Launch Was Tested on 50 Skintones So They're Really Universal
-
-                  <a href="https://www.elle.com/beauty/makeup-skin-care/a23012713/maybelline-launches-made-for-all-lipstick-for-all-skintones/">
-                    <img src="images/maybelip.jpg" alt="HTML tutorial" style="height:300px;">
-                  </a>
-                </span>
-              </button>
+                <p>  <a tabindex="0"  class="btn btn-primary" data-toggle="popover-click" data-trigger="focus" onclick="incrementValue()" title="Maybelline's New Lipstick Launch Was Tested on 50 Skintones So They're Really Universal"  data-img=images/maybelip.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
-
-            </div>
-        </div>
+          </div>
 
           <div class="column">
             <div class="card">
               <img src="images/wash.jpg" alt="Facial Cleanser" style="width:100%">
-              <h2>Neutrogena Facial Cleanser</h2>
+              <h2>Facial Cleanser</h2>
               <p class="price">$8</p>
-              <p>Oil-Free Acne Wash Pink Grapefruit Facial Cleanser</p>
+              <p>Neutrogena Oil-Free Acne Wash Pink Grapefruit Facial Cleanser</p>
               <div style="padding:20px">
-              <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Add to Cart</a>
+                <p>  <a tabindex="0"  class="btn btn-primary" data-toggle="popover-click"  data-trigger="focus"  onclick="incrementValue()" data-img=images/acne.jpg>Add to Cart</a>
+                </p>
               </div>
             </div>
           </div>
@@ -121,15 +114,17 @@
           <div class="column">
             <div class="card">
               <img src="images/shampoo.jpg" alt="Shampoo" style="width:100%">
-              <h2>Drybar On The Rocks Shampoo </h2>
+              <h2>Shampoo </h2>
               <p class="price">$26</p>
-              <p>Clarifying Charcoal Shampoo is enriched with activated charcoal to purify and thoroughly cleanse both the hair and scalp</p>
+              <p>Drybar On The Rocks Clarifying Charcoal Shampoo is enriched with activated charcoal to purify and thoroughly cleanse both the hair and scalp</p>
 
               <div style="padding:20px">
-              <p><button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Add to Cart</button></p>
+                <p>  <a tabindex="0"  class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="Buy It Now!"  data-img=images/book.jpg>Add to Cart</a>
+                </p>
               </div>
             </div>
-          </div>  </div>
+          </div>
+         </div>
 
 
 
@@ -141,38 +136,50 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="images/godiva.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Godiva Signature Chocolate Truffles Gift Box and Ballotin</h2>
+              <img src="images/godiva.jpg" alt="Chocolate" style="width:100%">
+              <h2>Godiva Chocolate</h2>
               <p class="price">$50</p>
-              <p>Godiva's Chef Chocolatiers used their creative expertise and the latest techniques along with the finest ingredients to create an intense flavor experience</p>
-              <p><button>Add to Cart</button></p>
+              <p>Godiva's Chef Chocolatiers used their creative expertise to create an intense flavor experience</p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0"  class="btn btn-primary" data-toggle="popover-click"  data-trigger="focus" title="Find a dentist near you!"  data-img=images/dentist.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
-
           <div class="column">
             <div class="card">
-              <img src="images/lemon.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Fresh Organic Lemons - 1 Dozen</h2>
+              <img src="images/lemon.jpg" alt="Lemons" style="width:100%">
+              <h2>Fresh Organic Lemons</h2>
               <p class="price">$15</p>
               <p>Organic lemons are considered to be the world's finest lemon for juicing, organic lemons are sweeter than regular lemons</p>
-              <p><button>Add to Cart</button></p></div>
+              <div style="padding:20px">
+                <p>  <a tabindex="0"  class="btn btn-primary" data-toggle="popover-click"  data-trigger="focus" title="10 Signs That You Might Have Scurvy"  data-img=images/scurvy.jpg>Add to Cart</a>
+                </p>
+              </div>
+          </div>
           </div>
           <div class="column">
             <div class="card">
-              <img src="images/Cheese.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Kraft Extra Sharp Cheddar Cheese</h2>
+              <img src="images/Cheese.jpg" alt="Cheese" style="width:100%">
+              <h2>Kraft Cheese</h2>
               <p class="price">$4</p>
               <p>16oz - Take your cooking to the next level with a delectable Cheddar Cheese Block from Kraft</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus" title="7 Tips on Living a Classy Lifestyle on a Budget"  data-img=images/class.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
           <div class="column">
             <div class="card">
-              <img src="images/kae.jpeg" alt="Denim Jeans" style="width:100%">
+              <img src="images/kae.jpeg" alt="Kale" style="width:100%">
               <h2>Organic Lacinato Kale</h2>
               <p class="price">$3</p>
               <p>Lacinato kale has been cultivated for centuries and is a true staple of our kitchens</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus" title="58 Recipes for Healthy Kale Smoothies and Other Kale Desserts"  data-img=images/kale.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -187,38 +194,52 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="images/vacuum.jpg" alt="Denim Jeans" style="width:100%">
+              <img src="images/vacuum.jpg" alt="Vacuum" style="width:100%">
               <h2>Bissell PowerForce Helix 2191</h2>
               <p class="price">$54</p>
               <p>This lightweight, yet powerful vacuum removes embedded dirt and hair from your home</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title=""  data-img=images/wife.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="images/pot.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Belgique Hard-Anodized Soup Pot with Lid</h2>
+              <img src="images/pot.jpg" alt="Food Pot" style="width:100%">
+              <h2>Belgique Hard-Anodized Pot</h2>
               <p class="price">$25</p>
               <p>A stylish bell-shaped silhouette sets this soup pot apart from the rest of your range</p>
-              <p><button>Add to Cart</button></p></div>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="Too Much Takeout? 6 Tips To Make Cooking At Home Easier"  data-img=images/food.jpg>Add to Cart</a>
+                </p>
+              </div>
+            </div>
           </div>
+
           <div class="column">
             <div class="card">
-              <img src="images/mirror.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Tolson Rounded Rectangle Pivot Mirror</h2>
+              <img src="images/mirror.jpg" alt="Mirror" style="width:100%">
+              <h2>Tolson Pivot Mirror</h2>
               <p class="price">$395</p>
               <p>Handsome and hard-working, our Tolson collection takes style seriously</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="The Power of Self-Reflection"  data-img=images/self.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
           <div class="column">
             <div class="card">
-              <img src="images/box.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Sterilite ClearView Latch Box</h2>
+              <img src="images/box.jpg" alt="Boxes" style="width:100%">
+              <h2>Sterilite Latch Box</h2>
               <p class="price">$8</p>
               <p>Maximize space and keep everything organized with this plastic clear-view storage container with lid</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="2 Signs You Might Be A Hoarder"  data-img=images/hoard.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -233,38 +254,52 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="images/mine.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Minecraft Nintendo Switch Video Game Software</h2>
+              <img src="images/mine.jpg" alt="Minecraft" style="width:100%">
+              <h2>Minecraft Game</h2>
               <p class="price">$30</p>
               <p>They'll love to create, explore and survive the surroundings in Minecraft for Nintendo Switch</p>
-              <p><button>Add to Cart</button></p>
-            </div>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="Not Getting Enought Sun? Try Vitamin D Supplements"  data-img=images/d3.jpg>Add to Cart</a>
+                </p>
+              </div>
+             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="images/notebook.jpg" alt="Denim Jeans" style="width:100%">
+              <img src="images/notebook.jpg" alt="The Notebool" style="width:100%">
               <h2>The Notebook </h2>
               <p class="price">$9</p>
               <p>blu-ray - Behind every great love is a great story </p>
-              <p><button>Add to Cart</button></p></div>
-          </div>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title=""  data-img=images/break.jpg>Add to Cart</a>
+                </p>
+              </div>
+             </div>
+           </div>
+
           <div class="column">
             <div class="card">
-              <img src="images/frank.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Frank Sinatra - Close To You - Vinyl</h2>
+              <img src="images/frank.jpg" alt="Vinyl" style="width:100%">
+              <h2>Frank Sinatra - Vinyl</h2>
               <p class="price">$30</p>
               <p>Close To You is one of Frank Sinatra's most gentle and intimate albums</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+              <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="13 Signs You Are Livng In The Wrong Era"  data-img=images/time.jpg>Add to Cart</a>
+              </p>
+            </div>
             </div>
           </div>
           <div class="column">
             <div class="card">
               <img src="images/bose.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Bose SoundLink Wireless Around-Ear Headphones II</h2>
+              <h2>Bose Headphones II</h2>
               <p class="price">$230</p>
               <p>Freedom. Convenience. The big advantages of wireless headphones</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+              <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="How Loud Is Too Loud?"  data-img=images/hear.jpg>Add to Cart</a>
+              </p>
+            </div>
             </div>
           </div>
         </div>
@@ -279,40 +314,53 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="images/catfood.jpeg" alt="Denim Jeans" style="width:100%">
-              <h2>Iams Proactive Health Adult Cat Food</h2>
+              <img src="images/catfood.jpeg" alt="Cat Food" style="width:100%">
+              <h2>Iams Cat Food</h2>
               <p class="price">$31</p>
-              <p>22 lbs - IAMS ProActive Health Adult Original with Chicken cat food has PreBiotics that work inside the digestive tract to promote healthy digestion and strong defenses</p>
-              <p><button>Add to Cart</button></p>
+              <p>22 lbs - IAMS ProActive Health Adult Original with Chicken cat food has PreBiotics that work inside the digestive tract</p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="Find Singles Near You!"  data-img=images/bumble.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="images/turtle.jpeg" alt="Denim Jeans" style="width:100%">
-              <h2>Zoo Med,Turtle Dock Aquatic Floating Turtle Dock </h2>
+              <img src="images/turtle.jpeg" alt="Turtle Dock" style="width:100%">
+              <h2>Aquatic Floating Turtle Dock </h2>
               <p class="price">$16</p>
               <p>Size Medium - Give your favorite reptile a place to dry off and bask with the Turtle Dock from Zoo Med</p>
-              <p><button>Add to Cart</button></p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary"  onclick="incrementValue()" data-toggle="popover-click" data-trigger="focus" title="Tips On How To Care For Your Turtle"  data-img=images/turtle.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="images/dogtoy.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Nylabone Dura Chew Original Bone Dog Toy - Large</h2>
+              <img src="images/dogtoy.jpg" alt="Dog Toy" style="width:100%">
+              <h2>Nylabone Dura Dog Toy - Large</h2>
               <p class="price">$13</p>
               <p>A softer, chewier toy which makes them excellent for the average chewing dog</p>
-              <p><button>Add to Cart</button></p></div>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="Find Dog Parks Near You!"  data-img=images/park.jpg>Add to Cart</a>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="images/parrot.jpg" alt="Denim Jeans" style="width:100%">
-              <h2>Prevue Hendryx Parrot Playstand</h2>
+              <img src="images/parrot.jpg" alt="Parrot" style="width:100%">
+              <h2>Prevue Parrot Playstand</h2>
               <p class="price">$130</p>
-              <p>The Prevue Pet Products Small Parrot Playstand includes eight hooks for hanging multiple toys and treats, along with three ladders for plenty of space to climb</p>
-              <p><button>Add to Cart</button></p>
+              <p>The Prevue Pet Products Small Parrot Playstand includes eight hooks for hanging multiple toys and treats</p>
+              <div style="padding:20px">
+                <p>  <a tabindex="0" class="btn btn-primary" data-toggle="popover-click" data-trigger="focus"  onclick="incrementValue()" title="1 Sign You May Be A Pirate"  data-img=images/pirate.jpg>Add to Cart</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
